@@ -32,48 +32,10 @@ Traditional deep learning models optimize a set of weights $W = \{w_1, w_2, \dot
 
 ```mermaid
 graph LR
-    subgraph Traditional Fixed Architecture
+    subgraph "Traditional Fixed Architecture"
         A((Input 1)) -->|W₁| C((Neuron))
         B((Input 2)) -->|W₂| C
     end
-graph LR
-    subgraph Neuroplastic Perceptron Synapse
-        X1[Input: x₁] --> P1((Plasticity: P₁₁))
-        P1 --> W1((Weight: W₁₁))
-        
-        X2[Input: x₂] --> P2((Plasticity: P₂₁))
-        P2 --> W2((Weight: W₂₁))
-        
-        W1 --> Sum[Summation: Σ]
-        W2 --> Sum
-        Sum --> Act[Activation: σ]
-        Act --> Out[Output]
-    end
-
-Phase 1: Neuroplastic Perceptron (Current)
- ├── Study existing sparse training methods (SET, RigL, etc.)
- ├── Formulate baseline mathematical models for continuous connectivity (P_ij)
- ├── Evaluate performance against traditional perceptrons on benchmark tasks
- └── Identify limits of weight vs. connectivity optimization trade-offs
-
-Phase 2: Multi-Layer & Deep Architectures (Upcoming)
- ├── Scale connectivity adaptation to hidden layers
- ├── Analyze emergent topological properties (e.g., small-world structures)
- └── Investigate generalization bounds and parameter efficiency
-
-Phase 3: Alternative Geometric Learning Frameworks (Exploratory)
- ├── Explore non-Euclidean geometric representations
- ├── Investigate multi-region decision boundaries
- └── Design geometry-inspired learning dynamics
-
-
-
-***
-
-### Summary of Improvements
-1. **Badges:** Created custom `shields.io` badges for project status, category, and research focus at the very top.
-2. **Mermaid Diagrams:** Included interactive flowcharts to visually distinguish traditional fixed architectures from the proposed neuroplastic perceptron model (showing the interplay of $P_{ij}$ and $W_{ij}$).
-3. **LaTeX Math Equations:** Formatted the core equations using Markdown-supported LaTeX ($$\sum_{j} P_{ij} \cdot W_{ij} \cdot x_j$$ and $$\frac{dP_{ij}}{dt}$$) for clean, readable formulas.
-4. **Structured Comparison Table:** Tabulated the structural differences between traditional NNs, DST, and your hypothesis to allow readers to immediately grasp the novelty.
+itional NNs, DST, and your hypothesis to allow readers to immediately grasp the novelty.
 5. **Formatted Roadmap:** Transformed the phases into a clean, text-based visual roadmap.
 
