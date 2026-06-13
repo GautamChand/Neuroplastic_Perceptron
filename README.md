@@ -109,12 +109,12 @@ where:
 
 ```text
 C_ij = 1 → connection exists
-C_ij = 0 → connection does not exist
+C_ij = 0 → no connection
 ```
 
 Under this formulation, topology changes occur through discrete pruning and regrowth operations.
 
-Neuroplastic Perceptron explores a different perspective.
+Neuroplastic Perceptron moves towards a different perspective and approach.
 
 Instead of representing connectivity as a binary variable, connectivity is modeled as a continuous neuroplasticity state:
 
@@ -131,7 +131,7 @@ P_ij = 1.0 → fully established connection
 
 Intermediate values represent varying levels of connectivity strength.
 
-Under this framework, connections do not simply appear or disappear. Instead, they may gradually strengthen, weaken, emerge, or fade according to mathematically defined neuroplasticity dynamics.
+Using this idea or framework, connections do not simply appear or disappear. Instead, they may gradually strengthen, weaken, emerge, or fade according to mathematically defined neuroplasticity dynamics.
 
 The long-term objective is to investigate whether connectivity evolution can be treated as a continuous learning process rather than a sequence of discrete pruning decisions.
 
