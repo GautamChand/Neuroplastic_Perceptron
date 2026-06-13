@@ -1,5 +1,3 @@
-# Neuroplastic_Perceptron
-An experimental machine learning research project investigating whether connectivity can become a learnable component of neural networks through mathematically defined neuroplasticity rules.
 # Neuroplastic Perceptron
 
 > Experimental machine learning research project exploring whether neural connectivity can become a learnable and adaptive component of neural networks through mathematically defined neuroplasticity rules.
@@ -99,6 +97,46 @@ Learning occurs through both:
 
 ---
 
+## Binary Connectivity vs Continuous Connectivity
+
+Most sparse training approaches can be interpreted using a binary connectivity mask:
+
+```text
+C_ij ∈ {0,1}
+```
+
+where:
+
+```text
+C_ij = 1 → connection exists
+C_ij = 0 → connection does not exist
+```
+
+Under this formulation, topology changes occur through discrete pruning and regrowth operations.
+
+Neuroplastic Perceptron explores a different perspective.
+
+Instead of representing connectivity as a binary variable, connectivity is modeled as a continuous neuroplasticity state:
+
+```text
+P_ij ∈ [0,1]
+```
+
+where:
+
+```text
+P_ij = 0.0 → effectively absent connection
+P_ij = 1.0 → fully established connection
+```
+
+Intermediate values represent varying levels of connectivity strength.
+
+Under this framework, connections do not simply appear or disappear. Instead, they may gradually strengthen, weaken, emerge, or fade according to mathematically defined neuroplasticity dynamics.
+
+The long-term objective is to investigate whether connectivity evolution can be treated as a continuous learning process rather than a sequence of discrete pruning decisions.
+
+---
+
 ## Neuroplastic Perceptron Hypothesis
 
 Traditional neural networks learn only weight parameters:
@@ -126,13 +164,11 @@ Output = Σ(P_ij × W_ij × x_j)
 
 In this framework:
 
-| Component | Purpose                    |
-| --------- | -------------------------- |
-| W_ij      | Information transformation |
-| P_ij      | Connectivity dynamics      |
-| x_j       | Input activation           |
+* Weights determine how information is transformed.
+* Connectivity determines how strongly a pathway exists.
+* Both quantities evolve during learning.
 
-The central hypothesis is that both weights and connectivity may evolve during learning.
+The central hypothesis is that adaptive connectivity dynamics may allow neural networks to learn not only how information should flow, but also how their internal structure should evolve.
 
 ---
 
@@ -162,18 +198,6 @@ where the plasticity function governs:
 * Connection removal
 
 Rather than explicitly deciding which connections should exist, connectivity may emerge from the dynamics of the system itself.
-
----
-
-## Comparison with Existing Approaches
-
-| Feature                                        | Traditional Neural Networks | Dynamic Sparse Training | Neuroplastic Perceptron |
-| ---------------------------------------------- | --------------------------- | ----------------------- | ----------------------- |
-| Learns Weights                                 | ✓                           | ✓                       | ✓                       |
-| Dynamic Connectivity                           | ✗                           | ✓                       | ✓                       |
-| Connectivity as Continuous State               | ✗                           | ✗                       | Research Goal           |
-| Connectivity Governed by Mathematical Dynamics | ✗                           | ✗                       | Research Goal           |
-| Biological Inspiration                         | Limited                     | Partial                 | Strong                  |
 
 ---
 
@@ -209,7 +233,7 @@ These directions remain exploratory and will only be investigated after establis
 
 ## Current Status
 
-Active Research
+**Active Research**
 
 Current work focuses on:
 
@@ -273,4 +297,4 @@ The project currently draws inspiration from research in:
 * Computational Neuroscience
 * Adaptive Network Topologies
 
-Detailed literature reviews and paper summaries are maintained in the `References/` directory.
+Detailed literature reviews, paper summaries, and research notes are maintained within the repository.
