@@ -49,6 +49,7 @@ graph LR
         Sum --> Act[Activation: σ]
         Act --> Out[Output]
     end
+
 Phase 1: Neuroplastic Perceptron (Current)
  ├── Study existing sparse training methods (SET, RigL, etc.)
  ├── Formulate baseline mathematical models for continuous connectivity (P_ij)
@@ -64,6 +65,7 @@ Phase 3: Alternative Geometric Learning Frameworks (Exploratory)
  ├── Explore non-Euclidean geometric representations
  ├── Investigate multi-region decision boundaries
  └── Design geometry-inspired learning dynamics
+
 
 
 ***
