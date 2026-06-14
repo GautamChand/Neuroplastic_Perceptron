@@ -61,14 +61,7 @@ This project investigates whether connectivity itself can be represented as a co
 
 ### Traditional Neural Networks
 
-```mermaid
-graph LR
-    X1[Input 1] --> W1[Weight]
-    X2[Input 2] --> W2[Weight]
-    W1 --> N[Neuron]
-    W2 --> N
-    N --> O[Output]
-```
+![Neuroplastic_Perceptron](assets/traditional_perceptron.png)
 
 Learning occurs by updating weights while connectivity remains fixed.
 
