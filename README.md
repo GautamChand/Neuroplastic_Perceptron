@@ -278,4 +278,4 @@ The project currently draws inspiration from research in:
 * Computational Neuroscience
 * Adaptive Network Topologies
 
-Detailed literature reviews, paper summaries, and research notes are maintained within the repository.
+Detailed literature reviews,paper summaries, and research notes are maintained within the repository.
