@@ -76,18 +76,9 @@ Learning occurs by updating weights while connectivity remains fixed.
 
 ### Neuroplastic Perceptron (Conceptual)
 
-```mermaid
-graph LR
-    X1[Input 1] --> P1[Plasticity State P_ij]
-    X2[Input 2] --> P2[Plasticity State P_ij]
+```## Conceptual Architecture
 
-    P1 --> W1[Weight W_ij]
-    P2 --> W2[Weight W_ij]
-
-    W1 --> N[Neuron]
-    W2 --> N
-
-    N --> O[Output]
+![Neuroplastic Perceptron Architecture](assets/Plasticity State Weight Flow-2026-06-14-051548.png)
 ```
 
 Learning occurs through both:
