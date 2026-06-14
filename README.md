@@ -69,8 +69,6 @@ Learning occurs by updating weights while connectivity remains fixed.
 
 ### Neuroplastic Perceptron (Conceptual)
 
-
-
 ![Neuroplastic_Perceptron](assets/Plasticity State Weight Flow-2026-06-14-051548.png)
 
 Learning occurs through both:
